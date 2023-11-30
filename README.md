@@ -120,7 +120,9 @@ Lembre-se de configurar corretamente o banco de dados PostgreSQL e ajustar as co
       ```
 ### 3. Buscar Usuário
 * Requisição: Header Authentication com valor "Bearer {token}".
+
 ![texto](https://github.com/ruansmachado/desafio-escribo-2/blob/main/img/auth-bearer.png)
+ 
 * Erros:
   * Token inválido:
       ```
