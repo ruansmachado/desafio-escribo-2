@@ -10,14 +10,14 @@
   "test": {
     "username": "postgres",
     "password": "123456",
-    "database": "seguranca_nodejs_test",
+    "database": "escriboServer_test",
     "host": "127.0.0.1",
     "dialect": "postgres"
   },
   "production": {
     "username": "postgres",
     "password": "123456",
-    "database": "seguranca_nodejs_production",
+    "database": "escriboServer_production",
     "host": "127.0.0.1",
     "dialect": "postgres"
   }

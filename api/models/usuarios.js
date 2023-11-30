@@ -11,6 +11,23 @@ module.exports = (sequelize, DataTypes) => {
       email: DataTypes.STRING,
       senha: DataTypes.STRING,
       telefones: DataTypes.JSONB,
+      createdAt: {
+        allowNull: false,
+        type: DataTypes.DATE,
+      },
+      updatedAt: {
+        allowNull: false,
+        type: DataTypes.DATE,
+      },
+      ultimo_login: {
+        allowNull: true,
+        type: DataTypes.DATE,
+      },
+      token: {
+        allowNull: true,
+        type: DataTypes.UUID,
+        defaultValue: DataTypes.UUIDV4,
+      },
     },
     {
       sequelize,

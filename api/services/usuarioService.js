@@ -11,7 +11,7 @@ class UsuarioService {
     });
 
     if (usuario) {
-      throw new Error("Usuário já cadastrado!");
+      throw new Error("E-mail já existente!");
     }
 
     try {
@@ -26,6 +26,7 @@ class UsuarioService {
           numero: telefone.numero,
           ddd: telefone.ddd,
         })),
+        token: uuidv4(),
       });
 
       return novoUsuario;

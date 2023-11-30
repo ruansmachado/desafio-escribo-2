@@ -1,0 +1,6 @@
+runtime: nodejs14
+env: standard
+
+env_variables:
+  NODE_ENV: "development"
+  DATABASE_URL: "postgres://postgres:123456@127.0.0.1:5432/escriboServer_development"
