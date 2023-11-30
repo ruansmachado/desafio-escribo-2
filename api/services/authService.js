@@ -2,6 +2,7 @@ const database = require("../models");
 const { compare } = require("bcryptjs");
 const { sign } = require("jsonwebtoken");
 const jsonSecret = require("../config/jsonSecret");
+const { format } = require("date-fns");
 
 class AuthService {
   async login(dto) {
@@ -41,9 +42,9 @@ class AuthService {
     );
     return {
       id: usuario.id,
-      createdAt: usuario.createdAt,
-      updateAt: usuario.updatedAt,
-      ultimo_login: usuario.ultimo_login,
+      createdAt: format(new Date(usuario.createdAt), "dd/MM/yyyy HH:mm"),
+      updatedAt: format(new Date(usuario.updatedAt), "dd/MM/yyyy HH:mm"),
+      ultimo_login: format(new Date(usuario.ultimo_login), "dd/MM/yyyy HH:mm"),
       accessToken,
     };
   }
