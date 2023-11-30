@@ -44,6 +44,15 @@ module.exports = {
         allowNull: false,
         type: Sequelize.DATE,
       },
+      ultimo_login: {
+        allowNull: true,
+        type: Sequelize.DATE,
+      },
+      token: {
+        allowNull: true,
+        type: Sequelize.UUID,
+        defaultValue: Sequelize.UUIDV4,
+      },
     });
   },
   async down(queryInterface, Sequelize) {

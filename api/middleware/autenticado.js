@@ -16,7 +16,6 @@ module.exports = async (req, res, next) => {
     const { id, email } = await decode(accessToken);
     req.usuarioId = id;
     req.usuarioEmail = email;
-
     return next();
   } catch (error) {
     res.status(401).send("Usuário não autorizado");

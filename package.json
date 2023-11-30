@@ -1,14 +1,18 @@
 {
-  "name": "seguranca-nodejs",
+  "name": "desafio-escribo",
   "version": "1.0.0",
-  "description": "Criar uma api node com autenticação jwt e validações ACL",
+  "description": "",
   "main": "index.js",
   "nodeVersion": "18.15.0",
   "scripts": {
     "start": "nodemon ./api/index.js"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ruansmachado/desafio_escribo-2"
+  },
   "keywords": [],
-  "author": "Raphael Lucas Girao de Lima",
+  "author": "Ruan dos Santos Machado",
   "license": "ISC",
   "dependencies": {
     "bcryptjs": "^2.4.3",
